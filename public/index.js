@@ -17,5 +17,5 @@ closeMenu.addEventListener('click', () => {
 })
 
 promoteClose.addEventListener('click', () => {
-  promote.classList.add('close')
+  promote.classList.add('hidden')
 })
