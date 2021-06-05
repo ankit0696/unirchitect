@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
     <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
     <title>Unirchitect</title>
 </head>
@@ -103,7 +104,9 @@
 
                                     <!-- <a href="#" class="font-medium text-gray-500 hover:text-gray-900">Company</a> -->
 
-                                    <a href="#" class="font-medium text-indigo-600 hover:text-indigo-500">Book
+                                    <a href="#"
+                                        onclick="Calendly.initPopupWidget({url: 'https://calendly.com/unirchitect/30min'});return false;"
+                                        class="font-medium text-indigo-600 hover:text-indigo-500">Book
                                         Appointment</a>
                                 </div>
                             </nav>
@@ -140,21 +143,22 @@
                                     </div>
                                 </div>
                                 <div class="px-2 pt-2 pb-3 space-y-1">
-                                    <a href="#"
-                                        class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50">Product</a>
+                                    <a href="#services"
+                                        class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50">Consultancies</a>
 
-                                    <a href="#"
-                                        class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50">Features</a>
+                                    <a href="#team"
+                                        class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50">Professional</a>
 
-                                    <a href="#"
-                                        class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50">Marketplace</a>
+                                    <!-- <a href="#"
+                                        class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50">Marketplace</a> -->
 
-                                    <a href="#"
-                                        class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50">Company</a>
+                                    <!-- <a href="#"
+                                        class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50">Company</a> -->
                                 </div>
                                 <a href="#"
+                                    onclick="Calendly.initPopupWidget({url: 'https://calendly.com/unirchitect/30min'});return false;"
                                     class="block w-full px-5 py-3 text-center font-medium text-indigo-600 bg-gray-50 hover:bg-gray-100">
-                                    Log in
+                                    Book Appointment
                                 </a>
                             </div>
                         </div>
@@ -515,7 +519,7 @@
 
 
     <section id="testimonial" class="dark:bg-coolGray-800 dark:text-coolGray-100 bg-gray-50">
-        <div class="container px-6 py-12 mx-auto">
+        <div class="container max-w-7xl px-6 py-12 mx-auto">
             <div class="grid items-center gap-4 xl:grid-cols-5">
                 <div class="max-w-2xl mx-auto my-8 space-y-4 text-center xl:col-span-2 xl:text-left">
                     <h2 class="text-4xl font-bold text-indigo-600">Hear from our clients</h2>
@@ -698,16 +702,16 @@
                         </defs>
                         <rect fill="url(#df31b9f6-a505-42f8-af91-d2b7c3218e5c)" width="52" height="24"></rect>
                     </svg>
-                    <span class="relative">The</span>
+                    <span class="relative">Awards</span>
                 </span>
-                quick, brown fox jumps over a lazy dog
+                & Recognitions
             </h2>
-            <p class="text-base text-gray-700 md:text-lg">
+            <!-- <p class="text-base text-gray-700 md:text-lg">
                 Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque rem aperiam, eaque
                 ipsa quae.
-            </p>
+            </p> -->
         </div>
-        <div class="grid gap-8 row-gap-8 lg:grid-cols-3">
+        <div class="grid gap-8 row-gap-8 lg:grid-cols-2">
             <div class="sm:text-center">
                 <div
                     class="flex items-center justify-center w-16 h-16 mb-4 rounded-full bg-indigo-50 sm:mx-auto sm:w-24 sm:h-24">
@@ -735,7 +739,7 @@
                     class="inline-flex items-center font-semibold transition-colors duration-200 text-deep-purple-accent-400 hover:text-deep-purple-800">Learn
                     more</a> -->
             </div>
-            <div class="sm:text-center">
+            <!-- <div class="sm:text-center">
                 <div
                     class="flex items-center justify-center w-16 h-16 mb-4 rounded-full bg-indigo-50 sm:mx-auto sm:w-24 sm:h-24">
                     <svg class="w-12 h-12 text-deep-purple-accent-400 sm:w-20 sm:h-20" stroke="currentColor"
@@ -751,26 +755,27 @@
                 <a href="/" aria-label=""
                     class="inline-flex items-center font-semibold transition-colors duration-200 text-deep-purple-accent-400 hover:text-deep-purple-800">Learn
                     more</a>
-            </div>
+            </div> -->
         </div>
     </div>
+
     <section id="team">
 
         <div class="py-12 bg-gray-50">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div class="lg:text-center">
                     <h2 class="text-base text-indigo-600 font-semibold tracking-wide uppercase">BUILDING TEAM</h2>
-                    <p class="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl">
+                    <p class="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl ">
                         The Talented People Behind the Scenes of the Organization
                     </p>
-                    <p class="mt-4 max-w-2xl text-xl text-gray-500 lg:mx-auto">
+                    <!-- <p class="mt-4 max-w-2xl text-xl text-gray-500 lg:mx-auto">
                         Lorem ipsum dolor sit amet consect adipisicing elit. Possimus magnam voluptatum cupiditate
                         veritatis
                         in accusamus quisquam.
-                    </p>
+                    </p> -->
                 </div>
             </div>
-            <div class="mt-16 md:mt-10">
+            <div class="mt-24 md:mt-10">
                 <div class="container mx-auto">
                     <div
                         class="lg:flex md:flex sm:flex items-center xl:justify-between flex-wrap md:justify-around sm:justify-around lg:justify-around">
@@ -782,53 +787,56 @@
                                             class="rounded-full object-cover h-full w-full shadow-md" />
                                     </div>
                                 </div>
-                                <div class="px-6 mt-16">
+                                <div class="px-6 my-16 ">
                                     <div class="font-bold text-3xl text-center pb-1">Ravi R. Pathak</div>
-                                    <p class="text-gray-800 text-sm text-center">Chief Executive Officer</p>
-                                    <p class="text-center text-gray-600 text-base pt-3 font-normal">The CEO's role in
+                                    <p class="text-gray-800 text-sm text-center">Director</p>
+                                    <!-- <p class="text-center text-gray-600 text-base pt-3 font-normal">The CEO's role in
                                         raising a
                                         company's corporate IQ is to establish an atmosphere that promotes knowledge
                                         sharing
                                         and
-                                        collaboration.</p>
-                                    <div class="w-full flex justify-center pt-5 pb-5">
-                                        <a href="javascript:void(0)" class="mx-5">
-                                            <div>
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                                                    viewBox="0 0 24 24" fill="none" stroke="#718096" stroke-width="1.5"
-                                                    stroke-linecap="round" stroke-linejoin="round"
-                                                    class="feather feather-github">
-                                                    <path
-                                                        d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
-                                                    </path>
-                                                </svg>
-                                            </div>
-                                        </a>
-                                        <a href="javascript:void(0)" class="mx-5">
-                                            <div>
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                                                    viewBox="0 0 24 24" fill="none" stroke="#718096" stroke-width="1.5"
-                                                    stroke-linecap="round" stroke-linejoin="round"
-                                                    class="feather feather-twitter">
-                                                    <path
-                                                        d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z">
-                                                    </path>
-                                                </svg>
-                                            </div>
-                                        </a>
-                                        <a href="javascript:void(0)" class="mx-5">
-                                            <div>
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                                                    viewBox="0 0 24 24" fill="none" stroke="#718096" stroke-width="1.5"
-                                                    stroke-linecap="round" stroke-linejoin="round"
-                                                    class="feather feather-instagram">
-                                                    <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
-                                                    <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
-                                                    <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
-                                                </svg>
-                                            </div>
-                                        </a>
+                                        collaboration.</p> -->
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="xl:w-1/3 sm:w-3/4 md:w-2/5 relative mt-16 mb-32 sm:mb-24 xl:max-w-sm lg:w-2/5">
+                            <div class="rounded overflow-hidden shadow-md bg-white">
+                                <div class="absolute -mt-20 w-full flex justify-center">
+                                    <div class="h-32 w-32">
+                                        <img src="img/ankit.jpg" alt=""
+                                            class="rounded-full object-cover h-full w-full shadow-md" />
                                     </div>
+                                </div>
+                                <div class="px-6 my-16 ">
+                                    <div class="font-bold text-3xl text-center pb-1">Ankit</div>
+                                    <p class="text-gray-800 text-sm text-center">Chief Executive Officer</p>
+                                    <!-- <p class="text-center text-gray-600 text-base pt-3 font-normal">COO translates the
+                                        vision and mission set by the CEO and board of directors of a company into a
+                                        strategic plan of action.</p> -->
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="xl:w-1/3 sm:w-3/4 md:w-2/5 relative mt-16 mb-32 sm:mb-24 xl:max-w-sm lg:w-2/5">
+                            <div class="rounded overflow-hidden shadow-md bg-white">
+                                <div class="absolute -mt-20 w-full flex justify-center">
+                                    <div class="h-32 w-32">
+                                        <img src="img/aditya.jpg" alt=""
+                                            class="rounded-full object-cover h-full w-full shadow-md" />
+                                    </div>
+                                </div>
+                                <div class="px-6 my-16 ">
+                                    <div class="font-bold text-3xl text-center pb-1">Ar. Aditya Raj</div>
+                                    <p class="text-gray-800 text-sm text-center">Chief Operating Officer</p>
+                                    <!-- <p class="text-center text-gray-600 text-base pt-3 font-normal">Our services
+                                        encompass
+                                        the
+                                        assessment and repair of property damage caused by water, fire, smoke, or mold.
+                                        We
+                                        can
+                                        also be a part of the restoration.</p> -->
+
                                 </div>
                             </div>
                         </div>
@@ -841,171 +849,20 @@
                                             class="rounded-full object-cover h-full w-full shadow-md" />
                                     </div>
                                 </div>
-                                <div class="px-6 mt-16">
+                                <div class="px-6 my-16 ">
                                     <div class="font-bold text-3xl text-center pb-1">Shubhna Sandhya</div>
-                                    <p class="text-gray-800 text-sm text-center">Product Design Head</p>
-                                    <p class="text-center text-gray-600 text-base pt-3 font-normal">The emphasis on
+                                    <p class="text-gray-800 text-sm text-center">Graphics Design Head</p>
+                                    <!-- <p class="text-center text-gray-600 text-base pt-3 font-normal">The emphasis on
                                         innovation
                                         and technology in our companies has resulted in a few of them establishing
                                         global
-                                        benchmarks in product design and development.</p>
-                                    <div class="w-full flex justify-center pt-5 pb-5">
-                                        <a href="javascript:void(0)" class="mx-5">
-                                            <div>
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                                                    viewBox="0 0 24 24" fill="none" stroke="#718096" stroke-width="1.5"
-                                                    stroke-linecap="round" stroke-linejoin="round"
-                                                    class="feather feather-github">
-                                                    <path
-                                                        d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
-                                                    </path>
-                                                </svg>
-                                            </div>
-                                        </a>
-                                        <a href="javascript:void(0)" class="mx-5">
-                                            <div>
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                                                    viewBox="0 0 24 24" fill="none" stroke="#718096" stroke-width="1.5"
-                                                    stroke-linecap="round" stroke-linejoin="round"
-                                                    class="feather feather-twitter">
-                                                    <path
-                                                        d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z">
-                                                    </path>
-                                                </svg>
-                                            </div>
-                                        </a>
-                                        <a href="javascript:void(0)" class="mx-5">
-                                            <div>
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                                                    viewBox="0 0 24 24" fill="none" stroke="#718096" stroke-width="1.5"
-                                                    stroke-linecap="round" stroke-linejoin="round"
-                                                    class="feather feather-instagram">
-                                                    <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
-                                                    <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
-                                                    <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
-                                                </svg>
-                                            </div>
-                                        </a>
-                                    </div>
+                                        benchmarks in product design and development.</p> -->
+
                                 </div>
                             </div>
                         </div>
-                        <div class="xl:w-1/3 sm:w-3/4 md:w-2/5 relative mt-16 mb-32 sm:mb-24 xl:max-w-sm lg:w-2/5">
-                            <div class="rounded overflow-hidden shadow-md bg-white">
-                                <div class="absolute -mt-20 w-full flex justify-center">
-                                    <div class="h-32 w-32">
-                                        <img src="img/ankit.jpg" alt=""
-                                            class="rounded-full object-cover h-full w-full shadow-md" />
-                                    </div>
-                                </div>
-                                <div class="px-6 mt-16">
-                                    <div class="font-bold text-3xl text-center pb-1">Ankit</div>
-                                    <p class="text-gray-800 text-sm text-center">Chief Operating Officer</p>
-                                    <p class="text-center text-gray-600 text-base pt-3 font-normal">Product designer
-                                        with
-                                        interests in immersive computing and XR, political ventures, and emerging
-                                        technologies.
-                                        Able to take ideas and give them a life.</p>
-                                    <div class="w-full flex justify-center pt-5 pb-5">
-                                        <a href="javascript:void(0)" class="mx-5">
-                                            <div>
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                                                    viewBox="0 0 24 24" fill="none" stroke="#718096" stroke-width="1.5"
-                                                    stroke-linecap="round" stroke-linejoin="round"
-                                                    class="feather feather-github">
-                                                    <path
-                                                        d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
-                                                    </path>
-                                                </svg>
-                                            </div>
-                                        </a>
-                                        <a href="javascript:void(0)" class="mx-5">
-                                            <div>
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                                                    viewBox="0 0 24 24" fill="none" stroke="#718096" stroke-width="1.5"
-                                                    stroke-linecap="round" stroke-linejoin="round"
-                                                    class="feather feather-twitter">
-                                                    <path
-                                                        d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z">
-                                                    </path>
-                                                </svg>
-                                            </div>
-                                        </a>
-                                        <a href="javascript:void(0)" class="mx-5">
-                                            <div>
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                                                    viewBox="0 0 24 24" fill="none" stroke="#718096" stroke-width="1.5"
-                                                    stroke-linecap="round" stroke-linejoin="round"
-                                                    class="feather feather-instagram">
-                                                    <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
-                                                    <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
-                                                    <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
-                                                </svg>
-                                            </div>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="xl:w-1/3 sm:w-3/4 md:w-2/5 relative mt-16 mb-32 sm:mb-24 xl:max-w-sm lg:w-2/5">
-                            <div class="rounded overflow-hidden shadow-md bg-white">
-                                <div class="absolute -mt-20 w-full flex justify-center">
-                                    <div class="h-32 w-32">
-                                        <img src="img/aditya.jpg" alt=""
-                                            class="rounded-full object-cover h-full w-full shadow-md" />
-                                    </div>
-                                </div>
-                                <div class="px-6 mt-16">
-                                    <div class="font-bold text-3xl text-center pb-1">Ar. Aditya Raj</div>
-                                    <p class="text-gray-800 text-sm text-center">Manager Development</p>
-                                    <p class="text-center text-gray-600 text-base pt-3 font-normal">Our services
-                                        encompass
-                                        the
-                                        assessment and repair of property damage caused by water, fire, smoke, or mold.
-                                        We
-                                        can
-                                        also be a part of the restoration.</p>
-                                    <div class="w-full flex justify-center pt-5 pb-5">
-                                        <a href="javascript:void(0)" class="mx-5">
-                                            <div>
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                                                    viewBox="0 0 24 24" fill="none" stroke="#718096" stroke-width="1.5"
-                                                    stroke-linecap="round" stroke-linejoin="round"
-                                                    class="feather feather-github">
-                                                    <path
-                                                        d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
-                                                    </path>
-                                                </svg>
-                                            </div>
-                                        </a>
-                                        <a href="javascript:void(0)" class="mx-5">
-                                            <div>
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                                                    viewBox="0 0 24 24" fill="none" stroke="#718096" stroke-width="1.5"
-                                                    stroke-linecap="round" stroke-linejoin="round"
-                                                    class="feather feather-twitter">
-                                                    <path
-                                                        d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z">
-                                                    </path>
-                                                </svg>
-                                            </div>
-                                        </a>
-                                        <a href="javascript:void(0)" class="mx-5">
-                                            <div>
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                                                    viewBox="0 0 24 24" fill="none" stroke="#718096" stroke-width="1.5"
-                                                    stroke-linecap="round" stroke-linejoin="round"
-                                                    class="feather feather-instagram">
-                                                    <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
-                                                    <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
-                                                    <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
-                                                </svg>
-                                            </div>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+
+
                         <div class="xl:w-1/3 sm:w-3/4 md:w-2/5 relative mt-16 mb-32 sm:mb-24 xl:max-w-sm lg:w-2/5">
                             <div class="rounded overflow-hidden shadow-md bg-white">
                                 <div class="absolute -mt-20 w-full flex justify-center">
@@ -1014,52 +871,15 @@
                                             class="rounded-full object-cover h-full w-full shadow-md" />
                                     </div>
                                 </div>
-                                <div class="px-6 mt-16">
+                                <div class="px-6 my-16 ">
                                     <div class="font-bold text-3xl text-center pb-1">Ar. Shubham</div>
-                                    <p class="text-gray-800 text-sm text-center">Principal Software Engineer</p>
-                                    <p class="text-center text-gray-600 text-base pt-3 font-normal">An avid open-source
+                                    <p class="text-gray-800 text-sm text-center">Chief Marketing Officer</p>
+                                    <!-- <p class="text-center text-gray-600 text-base pt-3 font-normal">An avid open-source
                                         developer who loves to be creative and inventive. I have 20 years of experience
                                         in
                                         the
-                                        field.</p>
-                                    <div class="w-full flex justify-center pt-5 pb-5">
-                                        <a href="javascript:void(0)" class="mx-5">
-                                            <div>
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                                                    viewBox="0 0 24 24" fill="none" stroke="#718096" stroke-width="1.5"
-                                                    stroke-linecap="round" stroke-linejoin="round"
-                                                    class="feather feather-github">
-                                                    <path
-                                                        d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
-                                                    </path>
-                                                </svg>
-                                            </div>
-                                        </a>
-                                        <a href="javascript:void(0)" class="mx-5">
-                                            <div>
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                                                    viewBox="0 0 24 24" fill="none" stroke="#718096" stroke-width="1.5"
-                                                    stroke-linecap="round" stroke-linejoin="round"
-                                                    class="feather feather-twitter">
-                                                    <path
-                                                        d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z">
-                                                    </path>
-                                                </svg>
-                                            </div>
-                                        </a>
-                                        <a href="javascript:void(0)" class="mx-5">
-                                            <div>
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                                                    viewBox="0 0 24 24" fill="none" stroke="#718096" stroke-width="1.5"
-                                                    stroke-linecap="round" stroke-linejoin="round"
-                                                    class="feather feather-instagram">
-                                                    <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
-                                                    <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
-                                                    <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
-                                                </svg>
-                                            </div>
-                                        </a>
-                                    </div>
+                                        field.</p> -->
+
                                 </div>
                             </div>
                         </div>
@@ -1072,52 +892,15 @@
                                             class="rounded-full object-cover h-full w-full shadow-md" />
                                     </div>
                                 </div>
-                                <div class="px-6 mt-16">
+                                <div class="px-6 my-16 ">
                                     <div class="font-bold text-3xl text-center pb-1">Shivam Kumar</div>
-                                    <p class="text-gray-800 text-sm text-center">UX Designer</p>
-                                    <p class="text-center text-gray-600 text-base pt-3 font-normal">A UX designer is the
+                                    <p class="text-gray-800 text-sm text-center">Tech Lead</p>
+                                    <!-- <p class="text-center text-gray-600 text-base pt-3 font-normal">A UX designer is the
                                         voice
                                         of the customer. Our job is to look beyond the business goals. We don't just
                                         experience
-                                        user interface but also questions it.</p>
-                                    <div class="w-full flex justify-center pt-5 pb-5">
-                                        <a href="javascript:void(0)" class="mx-5">
-                                            <div>
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                                                    viewBox="0 0 24 24" fill="none" stroke="#718096" stroke-width="1.5"
-                                                    stroke-linecap="round" stroke-linejoin="round"
-                                                    class="feather feather-github">
-                                                    <path
-                                                        d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
-                                                    </path>
-                                                </svg>
-                                            </div>
-                                        </a>
-                                        <a href="javascript:void(0)" class="mx-5">
-                                            <div>
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                                                    viewBox="0 0 24 24" fill="none" stroke="#718096" stroke-width="1.5"
-                                                    stroke-linecap="round" stroke-linejoin="round"
-                                                    class="feather feather-twitter">
-                                                    <path
-                                                        d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z">
-                                                    </path>
-                                                </svg>
-                                            </div>
-                                        </a>
-                                        <a href="javascript:void(0)" class="mx-5">
-                                            <div>
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                                                    viewBox="0 0 24 24" fill="none" stroke="#718096" stroke-width="1.5"
-                                                    stroke-linecap="round" stroke-linejoin="round"
-                                                    class="feather feather-instagram">
-                                                    <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
-                                                    <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
-                                                    <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
-                                                </svg>
-                                            </div>
-                                        </a>
-                                    </div>
+                                        user interface but also questions it.</p> -->
+
                                 </div>
                             </div>
                         </div>
@@ -1173,16 +956,17 @@
                 <div>
                     <span class="text-base font-bold tracking-wide text-gray-900">Social</span>
                     <div class="flex items-center mt-1 space-x-3">
-                        <a href="/"
-                            class="text-gray-500 transition-colors duration-300 hover:text-deep-purple-accent-400">
-                            <svg viewBox="0 0 24 24" fill="currentColor" class="h-5">
+                        <a href="https://www.youtube.com/channel/UCM_utyXjXw271FsQXLs5Zvw" target="_blank"
+                            class="text-gray-500 transition-colors duration-300 hover:text-indigo-600">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -77 512.00213 512" class="h-6">
                                 <path
-                                    d="M24,4.6c-0.9,0.4-1.8,0.7-2.8,0.8c1-0.6,1.8-1.6,2.2-2.7c-1,0.6-2,1-3.1,1.2c-0.9-1-2.2-1.6-3.6-1.6 c-2.7,0-4.9,2.2-4.9,4.9c0,0.4,0,0.8,0.1,1.1C7.7,8.1,4.1,6.1,1.7,3.1C1.2,3.9,1,4.7,1,5.6c0,1.7,0.9,3.2,2.2,4.1 C2.4,9.7,1.6,9.5,1,9.1c0,0,0,0,0,0.1c0,2.4,1.7,4.4,3.9,4.8c-0.4,0.1-0.8,0.2-1.3,0.2c-0.3,0-0.6,0-0.9-0.1c0.6,2,2.4,3.4,4.6,3.4 c-1.7,1.3-3.8,2.1-6.1,2.1c-0.4,0-0.8,0-1.2-0.1c2.2,1.4,4.8,2.2,7.5,2.2c9.1,0,14-7.5,14-14c0-0.2,0-0.4,0-0.6 C22.5,6.4,23.3,5.5,24,4.6z">
-                                </path>
+                                    d="m501.453125 56.09375c-5.902344-21.933594-23.195313-39.222656-45.125-45.128906-40.066406-10.964844-200.332031-10.964844-200.332031-10.964844s-160.261719 0-200.328125 10.546875c-21.507813 5.902344-39.222657 23.617187-45.125 45.546875-10.542969 40.0625-10.542969 123.148438-10.542969 123.148438s0 83.503906 10.542969 123.148437c5.90625 21.929687 23.195312 39.222656 45.128906 45.128906 40.484375 10.964844 200.328125 10.964844 200.328125 10.964844s160.261719 0 200.328125-10.546875c21.933594-5.902344 39.222656-23.195312 45.128906-45.125 10.542969-40.066406 10.542969-123.148438 10.542969-123.148438s.421875-83.507812-10.546875-123.570312zm0 0"
+                                    fill="currentColor" />
+                                <path d="m204.96875 256 133.269531-76.757812-133.269531-76.757813zm0 0" fill="#fff" />
                             </svg>
                         </a>
-                        <a href="/"
-                            class="text-gray-500 transition-colors duration-300 hover:text-deep-purple-accent-400">
+                        <a href="https://www.instagram.com/unirchitect/" target="_blank"
+                            class="text-gray-500 transition-colors duration-300 hover:text-indigo-600">
                             <svg viewBox="0 0 30 30" fill="currentColor" class="h-6">
                                 <circle cx="15" cy="15" r="4"></circle>
                                 <path
@@ -1190,8 +974,8 @@
                                 </path>
                             </svg>
                         </a>
-                        <a href="/"
-                            class="text-gray-500 transition-colors duration-300 hover:text-deep-purple-accent-400">
+                        <a href="https://www.facebook.com/UNIRCHITECT" target="_blank"
+                            class="text-gray-500 transition-colors duration-300 hover:text-indigo-600">
                             <svg viewBox="0 0 24 24" fill="currentColor" class="h-5">
                                 <path
                                     d="M22,0H2C0.895,0,0,0.895,0,2v20c0,1.105,0.895,2,2,2h11v-9h-3v-4h3V8.413c0-3.1,1.893-4.788,4.659-4.788 c1.325,0,2.463,0.099,2.795,0.143v3.24l-1.918,0.001c-1.504,0-1.795,0.715-1.795,1.763V11h4.44l-1,4h-3.44v9H22c1.105,0,2-0.895,2-2 V2C24,0.895,23.105,0,22,0z">
