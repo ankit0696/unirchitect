@@ -9,8 +9,7 @@ A brief description of what this project does and who it's for
 Install my-project with npm
 
 ```bash 
-  npm install my-project
-  cd my-project
+  npm init
 ```
     
 ## Site Status
