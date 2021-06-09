@@ -23,7 +23,7 @@ const Award = (props) => {
             </div>
             <div className="grid gap-8 row-gap-8 lg:grid-cols-2">
                 {props.awards.map((award) => (
-                    <div className="sm:text-center">
+                    <div key={award.name} className="sm:text-center">
                         <div
                             className="flex items-center justify-center w-16 h-16 mb-4 rounded-full bg-indigo-50 sm:mx-auto sm:w-24 sm:h-24">
                             <img src={`images/awards/${award.image}`} alt={award.name} />

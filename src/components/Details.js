@@ -26,7 +26,7 @@ const Details = (props) => {
                         <div className="grid gap-5 row-gap-8 sm:grid-cols-2">
                             {props.details.points.map((point) => (
 
-                                <div className="bg-white border-l-4 shadow-sm border-indigo-600">
+                                <div key={point.title} className="bg-white border-l-4 shadow-sm border-indigo-600">
                                     <div className="h-full p-5 border border-l-0 rounded-r">
                                         <h6 className="mb-2 font-semibold leading-5">
                                             {point.title}

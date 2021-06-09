@@ -13,7 +13,7 @@ const Testimonial = (props) => {
                         <div className="grid gap-4 md:grid-cols-2">
                             <div className="grid content-center gap-4">
                                 {props.testimonials.slice(0, props.testimonials.length / 2).map((testimonial) => (
-                                    <div className="p-6 rounded shadow-md dark:bg-coolGray-900">
+                                    <div key={testimonial.name} className="p-6 rounded shadow-md dark:bg-coolGray-900">
                                         <p>{testimonial.description}</p>
                                         <div className="flex items-center mt-4 space-x-4">
                                             <img src={`/images/clients/${testimonial.image}`} alt="{testimonial.name}" className="w-12 h-12 bg-center bg-cover rounded-full" />
@@ -27,7 +27,7 @@ const Testimonial = (props) => {
                             </div>
                             <div className="grid content-center gap-4">
                                 {props.testimonials.slice(props.testimonials.length / 2).map((testimonial) => (
-                                    <div className="p-6 rounded shadow-md dark:bg-coolGray-900">
+                                    <div key={testimonial.name} className="p-6 rounded shadow-md dark:bg-coolGray-900">
                                         <p>{testimonial.description}</p>
                                         <div className="flex items-center mt-4 space-x-4">
                                             <img src={`/images/clients/${testimonial.image}`} alt="{testimonial.name}" className="w-12 h-12 bg-center bg-cover rounded-full" />
