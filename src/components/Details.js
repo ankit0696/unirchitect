@@ -8,7 +8,7 @@ const Details = (props) => {
                     <div className="flex flex-col justify-center">
                         <div className="max-w-xl mb-6">
                             <h2 className="max-w-lg mb-6 font-sans text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl sm:leading-none">
-                                Our one firm ethos saves <span className="text-indigo-600">time</span>
+                                Our one firm ethos saves <span className="text-indigo-600">time{' '}</span>
                                 <br className="hidden md:block" />
                   cut <span className="text-indigo-600">cost</span> and deliver <span className="text-indigo-600">innovation</span>
                                 {' '}
