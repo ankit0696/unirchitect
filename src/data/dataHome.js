@@ -167,7 +167,7 @@ export const awards = [
     {
         name: 'SIH, Government of India',
         description: 'Winner at SIH. Awarded by Ministry of Road and Transport, Government of India.',
-        image: 'sih.png',
+        image: 'sih.jpg',
         learnMore: false
     }
 ]
