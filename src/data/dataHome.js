@@ -120,7 +120,7 @@ export const features = [
 
 export const testimonialsText = {
     title: 'Hear from our clients',
-    description: 'We love feedback from our clients.Take a look what they have to say about Unirchitect.'
+    description: `We love feedback from our clients.Don't just take our word for it, read from our customer testimonials.`
 }
 
 export const testimonials = [
@@ -171,4 +171,26 @@ export const awards = [
         learnMore: false
     }
 ]
+
+export const carrerData = {
+    carrerHeroDesc: 'Talent comes in many forms—from designers and planners to strategists and operations specialists—we invite you to continue your career journey with us.',
+    carrerHeroTitle: 'Make your move. Our greatest strength is you.',
+
+    carrerHero: [
+        {
+            title: 'Fill it up',
+            description: 'Our people are our greatest asset. Whether you’re fresh out of school or a seasoned pro, we provide and encourage opportunities for you to grow and do what you love.'
+        },
+        {
+            title: 'Light it',
+            description: 'Blow and go with the flow of design and your passion with us.Start journey from ground to the moon and light up your journey and learn with the flow.'
+        },
+        {
+            title: 'Shoot for the stars',
+            description: 'Whatever your thing is, we’ve got a career path you’ll love.From competitive salaries to healthy snacks and Flex-Fridays, we work hard and play hard too.'
+        }
+
+    ]
+}
+
 
