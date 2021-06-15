@@ -135,7 +135,6 @@ const CarrersForm = () => {
                                             </label>
                                             <input
                                                 type="tel"
-                                                minlength="9" maxlength="14"
                                                 name="phone_number"
                                                 id="phone_number"
                                                 required
