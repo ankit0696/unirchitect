@@ -6,6 +6,8 @@ import { MenuIcon, XIcon } from '@heroicons/react/outline'
 const navigation = [
     { name: 'Consultancies', href: '/#consultancies' },
     { name: 'Careers', href: '/carrers' },
+    // { name: 'Expert', href: '/expert' },
+
     // { name: 'Marketplace', href: '#' },
     // { name: 'Company', href: '#' },
 ]

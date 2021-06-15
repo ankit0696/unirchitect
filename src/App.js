@@ -6,6 +6,7 @@ import Launch from './components/Launch'
 import { Route, BrowserRouter as Router, Switch } from 'react-router-dom'
 import { launch } from './data/dataHome'
 import careers from './pages/carrers'
+// import expert from './pages/expert'
 
 function App() {
   return (
@@ -15,6 +16,8 @@ function App() {
         <Route path='/' exact component={Home} />
         {/* <Route path='/company' component={company} /> */}
         <Route path='/carrers' component={careers} />
+        {/* <Route path='/expert' component={expert} /> */}
+
 
         {/* <Route path='/contest' component={contest} /> */}
 

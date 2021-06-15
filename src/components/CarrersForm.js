@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { database } from '../firebase.js'
+import { storage } from '../firebase.js'
 
 const CarrersForm = () => {
     const [file, setfile] = useState(null)
@@ -8,14 +8,36 @@ const CarrersForm = () => {
     const [email, setemail] = useState()
     const [country, setcountry] = useState('India')
     const [phone, setphone] = useState()
+    const [progress, setProgress] = useState(0)
 
     const uploadHandler = async (e) => {
         e.preventDefault()
 
-        let formData = new FormData(e.target)
+        // let formData = new FormData(e.target)
 
         //send formdata
-
+        const uploadTask = storage.ref(`files/${firstName}${lastName}${email}${phone}.pdf`).put(file)
+        uploadTask.on(
+            "state_changed",
+            snapshot => {
+                const progress = Math.round(
+                    (snapshot.bytesTransferred / snapshot.totalBytes) * 100
+                )
+                setProgress(progress);
+            },
+            error => {
+                console.log(error);
+            },
+            () => {
+                storage
+                    .ref("files")
+                    .child(`${firstName}${phone}.pdf`)
+                    .getDownloadURL()
+                    .then(url => {
+                        // console.log(url)
+                    });
+            }
+        )
 
         //reset formdata
         setfirstName('')
@@ -109,10 +131,11 @@ const CarrersForm = () => {
                                         </div>
                                         <div className="col-span-6 sm:col-span-3">
                                             <label htmlFor="phone_number" className="block text-sm font-medium text-gray-700">
-                                                Phone
-                        </label>
+                                                Phone <small>(include country code)</small>
+                                            </label>
                                             <input
-                                                type="text"
+                                                type="tel"
+                                                minlength="9" maxlength="14"
                                                 name="phone_number"
                                                 id="phone_number"
                                                 required
@@ -152,7 +175,7 @@ const CarrersForm = () => {
                                                             className="relative cursor-pointer bg-white rounded-md font-medium text-indigo-600 hover:text-indigo-600 focus-within:outline-none focus-within:ring-2 focus-within:ring-offset-2 focus-within:ring-indigo-600"
                                                         >
                                                             <span>Upload a file</span>
-                                                            <input id="file-upload" name="file-upload" type="file" accept="" className="sr-only"
+                                                            <input id="file-upload" name="file-upload" type="file" accept="application/pdf" required className="sr-only"
                                                                 onChange={(e) => setfile(e.target.files[0])} />
                                                         </label>
                                                         <p className="pl-1">or drag and drop</p>
@@ -176,6 +199,16 @@ const CarrersForm = () => {
                                 </div>
                             </div>
                         </form>
+                        {progress === 0 ? "" :
+                            <div className="relative pt-1">
+                                <div className="overflow-hidden h-2 mb-4 text-xs flex rounded bg-indigo-200">
+                                    <div style={{ width: `${progress}%` }} className="shadow-none flex flex-col text-center whitespace-nowrap text-white justify-center bg-indigo-600"></div>
+                                </div>
+                                {progress === 100 && <p>Success</p>}
+
+
+                            </div>
+                        }
                     </div>
                 </div>
             </div>
