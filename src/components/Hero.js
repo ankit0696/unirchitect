@@ -4,8 +4,9 @@ import { MenuIcon, XIcon } from '@heroicons/react/outline'
 import { CallToActionBtn } from '../components/CallToActionBtn'
 
 const navigation = [
-    { name: 'Consultancies', href: '#consultancies' },
     { name: 'Careers', href: '/carrers' },
+    { name: 'Experts', href: '/experts' },
+
     // { name: 'Marketplace', href: '#' },
     // { name: 'Company', href: '#' },
 ]
