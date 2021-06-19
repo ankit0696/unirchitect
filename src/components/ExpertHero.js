@@ -1,9 +1,9 @@
 import React from 'react'
 
-const ExpertHero = () => {
+const ExpertHero = (props) => {
     return (
         <>
-            <div className='conatiner bg-white relative'>
+            <div className='conatiner relative'>
                 <div className='px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20'>
                     <div className='grid gap-10 lg:grid-cols-2'>
                         <div className='flex flex-col justify-center md:pr-8 xl:pr-0 lg:max-w-lg'>
@@ -52,27 +52,21 @@ const ExpertHero = () => {
                             </div>
                             <div className='max-w-xl mb-6'>
                                 <h2 className='max-w-lg mb-6 font-sans text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl sm:leading-none'>
-                                    Let us handle
-                  <br className='hidden md:block' />
-                  your next{' '}
-                                    <span className='inline-block text-deep-purple-accent-400'>
-                                        destination
-                  </span>
+                                    Greetings !
                                 </h2>
                                 <p className='text-base text-gray-700 md:text-lg'>
-                                    Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-                                    accusantium doloremque laudantium, totam rem aperiam, eaque
-                                    ipsa quae. explicabo.
-                </p>
+                                    {props.hero.desc}
+                                </p>
                             </div>
                             <div className="mt-8 flex lg:mt-0 lg:flex-shrink-0">
                                 <div className="inline-flex rounded-md shadow">
-                                    <button
+                                    <a
+                                        href="#expert-form"
                                         className="text-left inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 ease-linear transition-all duration-150"
                                         type="button"
                                     >
                                         Onboard With Us
-                                    </button>
+                                    </a>
                                 </div>
                                 <div className="ml-3 inline-flex rounded-md shadow">
                                     <a

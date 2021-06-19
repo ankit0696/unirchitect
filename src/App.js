@@ -7,6 +7,9 @@ import { Route, BrowserRouter as Router, Switch } from 'react-router-dom'
 import { launch } from './data/dataHome'
 import careers from './pages/carrers'
 import experts from './pages/experts'
+import refer from './pages/refer/refer'
+import NotFound from './components/NotFound'
+
 
 function App() {
   return (
@@ -17,9 +20,8 @@ function App() {
         {/* <Route path='/company' component={company} /> */}
         <Route path='/carrers' component={careers} />
         <Route path='/experts' component={experts} />
-
-
-        {/* <Route path='/contest' component={contest} /> */}
+        <Route path='/refer' component={refer} />
+        <Route path='*' component={NotFound} />
 
 
       </Switch>

@@ -2,7 +2,7 @@ import React from 'react'
 
 const ExpertTeam = (props) => {
     return (
-        <section className='pt-14 pb-10' id='experts'>
+        <section className='pt-14 pb-5 ' id='experts'>
             <div className='container max-w-7xl mx-auto px-4'>
                 <div className='flex flex-wrap justify-center text-center mb-24'>
                     <div className='w-full lg:w-6/12 px-4'>
