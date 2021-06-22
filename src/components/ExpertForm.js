@@ -49,7 +49,7 @@ const ExpertForm = (props) => {
 
     return (
         <section className="grid grid-cols-1 lg:grid-cols-2" id="expert-form">
-            <div className="w-full px-4 py-20 mx-auto xl:py-32 md:w-3/5 lg:w-4/5 xl:w-3/5">
+            <div className="w-full px-4 sm:py-2 md:py-10 mx-auto xl:py-32 md:w-3/5 lg:w-4/5 xl:w-3/5">
                 <h1 className="mb-4 -mt-3 text-2xl font-extrabold leading-snug tracking-tight text-left text-gray-900 md:text-4xl">Join as "Empanelled Expert" today</h1>
                 <form className="mt-8 space-y-4" onSubmit={uploadHandler}>
 
