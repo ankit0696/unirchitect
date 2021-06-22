@@ -2,13 +2,13 @@ export const experts = [
     {
         name: 'Ar. Shivangani',
         domain: 'Vastu Expert',
-        experience: '9+ yrs',
+        experience: '4+ yrs',
         img: 'shivangani.jpg'
     },
     {
         name: 'Ar. Jeevan jyoti',
         domain: '',
-        experience: '4+ yrs',
+        experience: '9+ yrs',
         img: 'jeevan.jpg'
 
     },
