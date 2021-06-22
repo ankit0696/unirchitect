@@ -1,16 +1,18 @@
 export const experts = [
     {
-        name: 'Ankit',
-        domain: 'Tech'
+        name: 'Ar. Shivangani',
+        domain: 'Vastu Expert',
+        experience: '9+ yrs',
+        img: 'shivangani.jpg'
     },
     {
-        name: 'Shivam',
-        domain: 'Tech'
+        name: 'Ar. Jeevan jyoti',
+        domain: '',
+        experience: '4+ yrs',
+        img: 'jeevan.jpg'
+
     },
-    {
-        name: 'Ankit',
-        domain: 'Tech'
-    },
+
 ]
 
 export const features = [

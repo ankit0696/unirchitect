@@ -66,7 +66,7 @@ const CarrersForm = () => {
                                         <div className="col-span-6 sm:col-span-3">
                                             <label htmlFor="first_name" className="block text-sm font-medium text-gray-700">
                                                 First name
-                        </label>
+                                            </label>
                                             <input
                                                 type="text"
                                                 name="first_name"
@@ -81,7 +81,7 @@ const CarrersForm = () => {
                                         <div className="col-span-6 sm:col-span-3">
                                             <label htmlFor="last_name" className="block text-sm font-medium text-gray-700">
                                                 Last name
-                        </label>
+                                            </label>
                                             <input
                                                 type="text"
                                                 name="last_name"
@@ -96,7 +96,7 @@ const CarrersForm = () => {
                                         <div className="col-span-6 sm:col-span-4">
                                             <label htmlFor="email_address" className="block text-sm font-medium text-gray-700">
                                                 Email address
-                        </label>
+                                            </label>
                                             <input
                                                 type="text"
                                                 name="email_address"
@@ -111,7 +111,7 @@ const CarrersForm = () => {
                                         <div className="col-span-6 sm:col-span-3">
                                             <label htmlFor="country" className="block text-sm font-medium text-gray-700">
                                                 Country / Region
-                        </label>
+                                            </label>
                                             <select
                                                 id="country"
                                                 name="country"
@@ -179,7 +179,7 @@ const CarrersForm = () => {
                                                         </label>
                                                         <p className="pl-1">or drag and drop</p>
                                                     </div>
-                                                    <p className="text-xs text-gray-500">PNG, JPG, GIF up to 10MB</p>
+                                                    <p className="text-xs text-gray-500">PDF up to 10MB</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -194,7 +194,7 @@ const CarrersForm = () => {
                                         className="inline-flex justify-center py-2 px-4 border border-transparent shadow-sm text-sm font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-600"
                                     >
                                         Join Us
-                    </button>
+                                    </button>
                                 </div>
                             </div>
                         </form>

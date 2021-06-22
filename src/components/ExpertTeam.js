@@ -4,33 +4,36 @@ const ExpertTeam = (props) => {
     return (
         <section className='pt-14 pb-5 ' id='experts'>
             <div className='container max-w-7xl mx-auto px-4'>
-                <div className='flex flex-wrap justify-center text-center mb-24'>
+                <div className='flex flex-wrap justify-center text-center mb-16'>
                     <div className='w-full lg:w-6/12 px-4'>
                         <h1 className='text-gray-900 text-4xl font-bold mt-0 mb-2'>
-                            Here are our heroes
-            </h1>
-                        <p className='text-blue-gray-700 text-lg font-light leading-relaxed mt-6 mb-4'>
-                            According to the National Oceanic and Atmospheric Administration,
-                            Ted, Scambos, NSIDClead scentist, puts the potentially record
-                            maximum.
-            </p>
+                            Here are our experts
+                        </h1>
+                        <p className='text-blue-gray-700 text-lg font-light leading-relaxed mt-6 mb-1'>
+                            Each expert of the Committee is highly related to the practical field with innovative thinking, and thanks to their experience, we are able to
+                            provide excellent service to our clients.
+                        </p>
                     </div>
                 </div>
-                <div className='flex flex-wrap'>
+                <div className='flex flex-wrap justify-center'>
                     {props.experts.map((member, index) => (
                         <div className='w-full md:w-6/12 lg:w-4/12 lg:mb-0 mb-12 px-4' key={index}>
                             <div className='px-6'>
                                 <img
-                                    alt='Ryan Tompson'
-                                    src='https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&q=80'
+                                    alt={member.name}
+                                    src={`/images/experts/${member.img}`}
                                     className='rounded-xl shadow-lg max-w-full h-auto align-middle border-none undefined'
                                 />
                                 <div className='pt-6 text-center'>
-                                    <h1 className='text-gray-900 text-xl font-bold leading-normal mt-0 mb-2'>
+                                    <h1 className='text-gray-900 text-xl font-bold leading-normal capitalize mt-0 mb-2'>
                                         {member.name}
                                     </h1>
-                                    <p className='text-blue-gray-700 text-base font-light leading-relaxed mt-0 mb-4'>
+                                    {/* <p className='text-indigo-700 text-base font-light leading-relaxed mt-0 mb-4'>
                                         {member.domain}
+
+                                    </p> */}
+                                    <p className='text-indigo-700 text-base font-semibold leading-relaxed mt-0 mb-4'>
+                                        {member.experience}
 
                                     </p>
                                     <div className='flex items-center justify-center'>

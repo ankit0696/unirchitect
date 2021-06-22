@@ -9,6 +9,8 @@ import careers from './pages/carrers'
 import experts from './pages/experts'
 import refer from './pages/refer/refer'
 import NotFound from './components/NotFound'
+import community from './pages/community/community'
+
 
 
 function App() {
@@ -21,6 +23,10 @@ function App() {
         <Route path='/carrers' component={careers} />
         <Route path='/experts' component={experts} />
         <Route path='/refer' component={refer} />
+        <Route path='/community' component={community} />
+
+
+
         <Route path='*' component={NotFound} />
 
 
