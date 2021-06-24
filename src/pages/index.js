@@ -5,15 +5,26 @@ import Category from '../components/Category'
 import Services from '../components/Services'
 import Testimonial from '../components/Testimonial'
 import Award from '../components/Award'
-import Team from '../components/Team'
+// import Team from '../components/Team'
 import GetReady from '../components/GetReady'
-import { members, categories, features, testimonials, hero, testimonialsText, awards, details } from '../data/dataHome'
+import { categories, features, testimonials, hero, testimonialsText, awards, details } from '../data/dataHome'
+import { Helmet } from 'react-helmet'
 
 
 
 const Home = () => {
     return (
         <>
+            <Helmet>
+                <title>Unirchitect | Architecture Consultancy - Online Conferencing | We provide Architectural, Structural, Vastu
+                    consultancy, e.t.c. Clear your doubts with our experts over conferencing. Our solution makes your home/building
+                    perfect. Schedule an appointment with an expert.</title>
+                <meta name="description" content="We provide Architectural, Structural, Vastu consultancy, e.t.c.
+         Clear your doubts with our experts over conferencing. Our solution that make your home/building perfect. 
+         Schedule an appointment with an expert. Free." />
+                <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet" />
+                <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
+            </Helmet>
             <Hero hero={hero} />
             <Details details={details} />
             <Category categories={categories} />
@@ -21,7 +32,7 @@ const Home = () => {
             <GetReady />
             <Testimonial testimonials={testimonials} testimonialsText={testimonialsText} />
             <Award awards={awards} />
-            <Team members={members} />
+            {/* <Team members={members} /> */}
         </>
     )
 }
