@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
-import { storage } from '../firebase.js'
+
+import { storage } from '../firebase/config.js'
 
 
 const ExpertForm = (props) => {
@@ -160,16 +161,15 @@ const ExpertForm = (props) => {
                             </div>
                         </div>
                     </div>
-
-
-
-
                     <button
                         type="submit"
                         className="inline-flex justify-center py-2 px-4 border border-transparent shadow-sm text-sm font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-600"
                     >
                         Join Us
                     </button>
+
+
+
                 </form>
                 <div className="pt-6 mt-6 text-sm font-medium text-gray-700 border-t border-gray-200">
                     We will get in touch with you shortly.

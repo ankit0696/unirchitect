@@ -18,8 +18,8 @@ const Award = (props) => {
                         </svg>
                         <span className="relative">Awards&nbsp;</span>
                     </span>
-                 & Recognitions
-            </h2>
+                    & Recognitions
+                </h2>
             </div>
             <div className="grid gap-8 row-gap-8 lg:grid-cols-2">
                 {props.awards.map((award) => (

@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { storage } from '../firebase.js'
+import { storage } from '../firebase/config.js'
 
 const CarrersForm = () => {
     const [file, setfile] = useState(null)
