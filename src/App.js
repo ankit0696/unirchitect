@@ -8,8 +8,9 @@ import { launch } from './data/dataHome'
 import careers from './pages/carrers'
 import experts from './pages/experts'
 import refer from './pages/refer/refer'
-import NotFound from './components/NotFound'
 import community from './pages/community/community'
+import NotFound from './pages/NotFound'
+import Blog from './pages/community/Blog'
 
 
 
@@ -23,8 +24,8 @@ function App() {
         <Route path='/carrers' component={careers} />
         <Route path='/experts' component={experts} />
         <Route path='/refer' component={refer} />
-        <Route path='/community' component={community} />
-
+        <Route path='/community' exact component={community} />
+        <Route path='/community/1' exact component={Blog} />
 
 
         <Route path='*' component={NotFound} />

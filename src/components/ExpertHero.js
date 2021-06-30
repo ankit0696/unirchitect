@@ -63,7 +63,6 @@ const ExpertHero = (props) => {
                                     <a
                                         href="#expert-form"
                                         className="text-left inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 ease-linear transition-all duration-150"
-                                        type="button"
                                     >
                                         Onboard With Us
                                     </a>

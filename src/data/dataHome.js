@@ -12,7 +12,7 @@ export const hero = {
 }
 
 export const details = {
-    description: 'We reveal a world of possibilities to the client through the information presented in number. We save your construction cost by analysing the the best material available in market.',
+    description: 'We reveal a world of possibilities to the client through the information presented in number. We save your construction cost by analysing the best material available in market.',
     points: [
         {
             title: 'Get initial budget estimate',

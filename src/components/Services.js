@@ -10,10 +10,10 @@ const Services = (props) => {
                     <h2 className="text-base text-indigo-600 font-semibold tracking-wide uppercase">CONSULTANCIES</h2>
                     <p className="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl">
                         Your dreams can come true.
-          </p>
+                    </p>
                     <p className="mt-4 max-w-2xl text-xl text-gray-500 lg:mx-auto">
                         We help achieving your dream and serve as catalyst for positive change.
-          </p>
+                    </p>
                 </div>
 
                 <div className="mt-10">
