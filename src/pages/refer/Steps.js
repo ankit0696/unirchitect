@@ -15,10 +15,10 @@ const Steps = () => {
                 </h2>
                 <p className="text-base text-gray-700 md:text-lg">
                     Refer Unirchitect to your family and friends and earn up to
-                  </p>
+                </p>
                 <h3 className="mt-2 text-4xl font-extrabold sm:text-5xl xl:text-6xl">
                     ₹ 20,000
-          </h3>
+                </h3>
             </div>
             <div className="relative grid gap-8 row-gap-5 mb-8 md:row-gap-8 lg:grid-cols-3">
                 <div className="absolute inset-0 flex items-center justify-center sm:hidden lg:flex">
@@ -29,7 +29,7 @@ const Steps = () => {
                         <p className="text-lg font-bold leading-5">Believe</p>
                         <p className="flex items-center justify-center w-6 h-6 font-bold rounded text-indigo-400 bg-indigo-50">
                             1
-                      </p>
+                        </p>
                     </div>
                     <p className="text-sm text-gray-900">
                         Skate ipsum dolor sit amet, alley oop vert mute-air Colby Carter
@@ -41,7 +41,7 @@ const Steps = () => {
                         <p className="text-lg font-bold leading-5">Be yourself</p>
                         <p className="flex items-center justify-center w-6 h-6 font-bold rounded text-indigo-400 bg-indigo-50">
                             2
-                      </p>
+                        </p>
                     </div>
                     <p className="text-sm text-gray-900">
                         A flower in my garden, a mystery in my panties. Heart attack never
@@ -53,7 +53,7 @@ const Steps = () => {
                         <p className="text-lg font-bold leading-5">Just do it</p>
                         <p className="flex items-center justify-center w-6 h-6 font-bold rounded text-indigo-400 bg-indigo-50">
                             3
-                      </p>
+                        </p>
                     </div>
                     <p className="text-sm text-gray-900">
                         Chase ball of string eat plants, meow, and throw up because I ate
@@ -67,7 +67,7 @@ const Steps = () => {
                     className="inline-flex items-center justify-center w-full h-12 px-6 font-medium tracking-wide text-white transition duration-200 rounded shadow-md md:w-auto bg-indigo-600 hover:bg-indigo-700 focus:shadow-outline focus:outline-none"
                 >
                     Refer Now
-                  </a>
+                </a>
             </div>
         </div>
 
