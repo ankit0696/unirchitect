@@ -1,13 +1,13 @@
 import React from 'react'
-import { Helmet } from 'react-helmet'
 import CarrersForm from '../components/CarrersForm'
 import CarrersHero from '../components/CarrersHero'
 import Navbar from '../components/Navbar'
 import { carrerData } from '../data/dataHome'
+import { Helmet, HelmetProvider } from 'react-helmet-async';
 
 const carrers = () => {
     return (
-        <>
+        <HelmetProvider>
             <Helmet>
                 <meta charSet="utf-8" />
                 <title>Carrers | Unirchitect </title>
@@ -18,7 +18,7 @@ const carrers = () => {
             <Navbar where="Careers" />
             <CarrersHero carrerData={carrerData} />
             <CarrersForm />
-        </>
+        </HelmetProvider>
     )
 }
 

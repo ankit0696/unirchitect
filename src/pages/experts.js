@@ -4,13 +4,14 @@ import { experts, features, hero } from '../data/dataExpert'
 import ExpertHero from '../components/ExpertHero'
 import ExpertTeam from '../components/ExpertTeam'
 import ExpertForm from '../components/ExpertForm'
-import { Helmet } from 'react-helmet'
+import { Helmet, HelmetProvider } from 'react-helmet-async';
+
 
 
 
 const expert = () => {
     return (
-        <>
+        <HelmetProvider>
             <Helmet>
                 <meta charSet="utf-8" />
                 <title>Experts | Unirchitect </title>
@@ -22,7 +23,7 @@ const expert = () => {
             <ExpertHero hero={hero} />
             <ExpertTeam experts={experts} />
             <ExpertForm features={features} />
-        </>
+        </HelmetProvider>
     )
 }
 

@@ -1,7 +1,10 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import Navbar from '../../components/Navbar'
 
-const Blog = () => {
+const Blog = ({ match }) => {
+    useEffect(() => {
+        console.log(match)
+    }, [match])
     return (
         <>
             <Navbar />
