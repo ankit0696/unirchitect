@@ -25,7 +25,7 @@ function App() {
         <Route path='/experts' component={experts} />
         <Route path='/refer' component={refer} />
         <Route path='/community' exact component={community} />
-        <Route path='/community/1' exact component={Blog} />
+        <Route path='/community/:id' exact component={Blog} />
 
 
         <Route path='*' component={NotFound} />

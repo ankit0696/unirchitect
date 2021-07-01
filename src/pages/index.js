@@ -1,4 +1,5 @@
 import React from 'react'
+import { Helmet, HelmetProvider } from 'react-helmet-async';
 import Hero from '../components/Hero'
 import Details from '../components/Details'
 import Category from '../components/Category'
@@ -8,13 +9,12 @@ import Award from '../components/Award'
 // import Team from '../components/Team'
 import GetReady from '../components/GetReady'
 import { categories, features, testimonials, hero, testimonialsText, awards, details } from '../data/dataHome'
-import { Helmet } from 'react-helmet'
 
 
 
 const Home = () => {
     return (
-        <>
+        <HelmetProvider>
             <Helmet>
                 <title>Unirchitect | Architecture Consultancy - Online Conferencing | We provide Architectural, Structural, Vastu
                     consultancy, e.t.c. Clear your doubts with our experts over conferencing. Our solution makes your home/building
@@ -33,7 +33,7 @@ const Home = () => {
             <Testimonial testimonials={testimonials} testimonialsText={testimonialsText} />
             <Award awards={awards} />
             {/* <Team members={members} /> */}
-        </>
+        </HelmetProvider>
     )
 }
 
