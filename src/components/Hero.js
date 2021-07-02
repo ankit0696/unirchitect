@@ -7,6 +7,8 @@ import { Link } from 'react-router-dom'
 const navigation = [
     { name: 'Careers', href: '/carrers' },
     { name: 'Experts', href: '/experts' },
+    { name: 'Refer', href: '/refer' },
+
 
     // { name: 'Marketplace', href: '#' },
     // { name: 'Company', href: '#' },

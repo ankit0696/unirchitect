@@ -16,7 +16,7 @@ const Steps = () => {
                 <p className="text-base text-gray-700 md:text-lg">
                     Refer Unirchitect to your family and friends and earn up to
                 </p>
-                <h3 className="mt-2 text-4xl font-extrabold sm:text-5xl xl:text-6xl">
+                <h3 className="mt-2 text-4xl font-extrabold sm:text-5xl xl:text-6xl text-indigo-600">
                     ₹ 20,000
                 </h3>
             </div>
@@ -26,47 +26,53 @@ const Steps = () => {
                 </div>
                 <div className="p-5 duration-300 transform bg-white border rounded shadow-sm hover:-translate-y-2">
                     <div className="flex items-center justify-between mb-2">
-                        <p className="text-lg font-bold leading-5">Believe</p>
+                        <p className="text-lg font-bold leading-5">Spread the word</p>
                         <p className="flex items-center justify-center w-6 h-6 font-bold rounded text-indigo-400 bg-indigo-50">
                             1
                         </p>
                     </div>
                     <p className="text-sm text-gray-900">
-                        Skate ipsum dolor sit amet, alley oop vert mute-air Colby Carter
-                        flail 180 berm.
+                        Refer someone by filling the below form & give us their details and we’ll do the rest.
                     </p>
                 </div>
                 <div className="p-5 duration-300 transform bg-white border rounded shadow-sm hover:-translate-y-2">
                     <div className="flex items-center justify-between mb-2">
-                        <p className="text-lg font-bold leading-5">Be yourself</p>
+                        <p className="text-lg font-bold leading-5">Track</p>
                         <p className="flex items-center justify-center w-6 h-6 font-bold rounded text-indigo-400 bg-indigo-50">
                             2
                         </p>
                     </div>
                     <p className="text-sm text-gray-900">
-                        A flower in my garden, a mystery in my panties. Heart attack never
-                        stopped.
+                        Track the progress of your referred projects within your referrals dashboard or Unirchitect Whatsapp group.
                     </p>
                 </div>
                 <div className="p-5 duration-300 transform bg-white border rounded shadow-sm hover:-translate-y-2">
                     <div className="flex items-center justify-between mb-2">
-                        <p className="text-lg font-bold leading-5">Just do it</p>
+                        <p className="text-lg font-bold leading-5">Earn</p>
                         <p className="flex items-center justify-center w-6 h-6 font-bold rounded text-indigo-400 bg-indigo-50">
                             3
                         </p>
                     </div>
                     <p className="text-sm text-gray-900">
-                        Chase ball of string eat plants, meow, and throw up because I ate
-                        plants going.
+                        You will get paid once your referee pays 50% of the project value.
                     </p>
                 </div>
             </div>
-            <div className="text-center">
+            <div className="text-center md:pt-10">
                 <a
-                    href="/"
-                    className="inline-flex items-center justify-center w-full h-12 px-6 font-medium tracking-wide text-white transition duration-200 rounded shadow-md md:w-auto bg-indigo-600 hover:bg-indigo-700 focus:shadow-outline focus:outline-none"
+                    href="#refer-form"
+                    aria-label="Scroll down"
+                    className="animate-bounce flex items-center justify-center w-10 h-10 mx-auto text-gray-600 duration-300 transform border border-gray-400 rounded-full hover:text-deep-purple-accent-400 hover:border-deep-purple-accent-400 hover:shadow hover:scale-110"
                 >
-                    Refer Now
+                    <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="12"
+                        height="12"
+                        viewBox="0 0 12 12"
+                        fill="currentColor"
+                    >
+                        <path d="M10.293,3.293,6,7.586,1.707,3.293A1,1,0,0,0,.293,4.707l5,5a1,1,0,0,0,1.414,0l5-5a1,1,0,1,0-1.414-1.414Z" />
+                    </svg>
                 </a>
             </div>
         </div>

@@ -27,7 +27,6 @@ function App() {
         <Route path='/community' exact component={community} />
         <Route path='/community/:id' exact component={Blog} />
 
-
         <Route path='*' component={NotFound} />
 
 
