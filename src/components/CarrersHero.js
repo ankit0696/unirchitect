@@ -17,18 +17,19 @@ const CarrersHero = (props) => {
                     <img
                         className="object-cover w-full h-56 col-span-2 rounded shadow-lg"
                         src="/images/carrer/carrer1.webp"
-                        alt=""
+                        alt="hero-first"
                     />
                     <img
                         className="object-cover w-full h-48 rounded shadow-lg"
                         src="/images/carrer/carrer2.webp"
+                        alt="hero-second"
 
-                        alt=""
                     />
                     <img
                         className="object-cover w-full h-48 rounded shadow-lg"
                         src="/images/carrer/carrer3.webp"
-                        alt=""
+                        alt="hero-third"
+
                     />
                 </div>
                 <div className="flex flex-col justify-center">

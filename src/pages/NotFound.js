@@ -23,7 +23,7 @@ const NotFound = () => {
                             <img
                                 className="object-cover w-full h-56 rounded sm:h-96"
                                 src="/images/404.svg"
-                                alt=""
+                                alt="not found"
                             />
                         </div>
                     </div>
