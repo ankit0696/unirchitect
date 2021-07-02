@@ -180,9 +180,9 @@ const ExpertForm = (props) => {
                             <div style={{ width: `${progress}%` }} className="shadow-none flex flex-col text-center whitespace-nowrap text-white justify-center bg-indigo-600"></div>
                         </div>
                         {progress === 100 &&
-                            <div class="p-4 flex items-center border-l-4 shadow-md border-indigo-600 fade show toast" role="alert" aria-live="assertive" aria-atomic="true">
-                                <div class="toast-body">Success, we have recieved your details.</div>
-                                <button type="button" class="ml-auto mr-3 btn-close btn-close-white" data-bs-dismiss="toast" aria-label="Close"></button>
+                            <div className="p-4 flex items-center border-l-4 shadow-md border-indigo-600 fade show toast" role="alert" aria-live="assertive" aria-atomic="true">
+                                <div className="toast-body">Success, we have recieved your details.</div>
+                                <button type="button" className="ml-auto mr-3 btn-close btn-close-white" data-bs-dismiss="toast" aria-label="Close"></button>
                             </div>}
 
 

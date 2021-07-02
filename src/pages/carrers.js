@@ -9,7 +9,6 @@ const carrers = () => {
     return (
         <HelmetProvider>
             <Helmet>
-                <meta charSet="utf-8" />
                 <title>Carrers | Unirchitect </title>
                 <meta name="description" content="To tap the sky , to a pathway of learning and experience. A Union , so we can soar!
                  Join us.Join this journey of growth." />
