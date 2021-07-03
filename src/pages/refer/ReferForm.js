@@ -75,7 +75,7 @@ const ReferForm = () => {
                             </div>
                             <div className='py-3'>
                                 <label htmlFor="referPhone" className="block text-sm font-medium text-gray-700">Phone</label>
-                                <input value={refers.referPhone} onChange={handleChange} required type="tel" name="referPhone" id="referPhone" autoComplete="given-name" className="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md" />
+                                <input value={refers.referPhone} onChange={handleChange} required type="text" name="referPhone" id="referPhone" autoComplete="given-name" className="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md" />
 
                             </div>
                             <div className='py-3'>
@@ -99,7 +99,7 @@ const ReferForm = () => {
                             </div>
                             <div className='py-3'>
                                 <label htmlFor="clientPhone" className="block text-sm font-medium text-gray-700">Phone</label>
-                                <input value={refers.clientPhone} onChange={handleChange} required type="tel" name="clientPhone" id="clientPhone" autoComplete="given-name" className="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md" />
+                                <input value={refers.clientPhone} onChange={handleChange} required type="text" name="clientPhone" id="clientPhone" autoComplete="given-name" className="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md" />
 
                             </div>
                             <div className='py-3'>

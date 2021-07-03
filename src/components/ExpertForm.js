@@ -72,7 +72,7 @@ const ExpertForm = (props) => {
                             Email address
                         </label>
                         <input
-                            type="text"
+                            type="email"
                             name="email_address"
                             id="email_address"
                             onChange={(e) => setemail_address(e.target.value)}
