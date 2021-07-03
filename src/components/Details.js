@@ -10,7 +10,7 @@ const Details = (props) => {
                             <h2 className="max-w-lg mb-6 font-sans text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl sm:leading-none">
                                 Our one firm ethos saves <span className="text-indigo-600">time{' '}</span>
                                 <br className="hidden md:block" />
-                  cut <span className="text-indigo-600">cost</span> and deliver <span className="text-indigo-600">innovation</span>
+                                cut <span className="text-indigo-600">cost</span> and deliver <span className="text-indigo-600">innovation</span>
                                 {' '}
                                 <span className="relative px-1">
                                     <div className="absolute inset-x-0 bottom-0 h-3 transform -skew-x-12 bg-indigo-200" />
@@ -44,7 +44,7 @@ const Details = (props) => {
                         <img
                             className="object-cover w-full h-56 rounded sm:h-96"
                             src="/images/stats.jpg"
-                            alt=""
+                            alt="increasing stats"
                         />
                     </div>
                 </div>

@@ -13,7 +13,7 @@ const Team = (props) => {
                             <div className="rounded overflow-hidden shadow-md bg-white">
                                 <div className="absolute -mt-20 w-full flex justify-center">
                                     <div className="h-32 w-32">
-                                        <img src={`/images/team/${member.img}`} alt=""
+                                        <img src={`/images/team/${member.img}`} alt={member.name}
                                             className="rounded-full object-cover h-full w-full shadow-md" />
                                     </div>
                                 </div>

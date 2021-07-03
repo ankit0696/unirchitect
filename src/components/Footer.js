@@ -13,26 +13,26 @@ const Footer = () => {
                         <div className="mt-6 lg:max-w-sm">
                             <p className="text-sm text-gray-800">
                                 Architecture Consultancy & More.
-                        </p>
+                            </p>
                             <p className="mt-4 text-sm text-gray-800 font-bold">
                                 Company: Sister firm
-                        </p>
+                            </p>
                             <p className="mt-4 text-sm text-gray-800">
                                 Familia decor and engineering LLP
-                        </p>
+                            </p>
                             <p className="mt-4 text-sm text-gray-800">
                                 Fujitech elevator Pvt. Ltd.
-                        </p>
+                            </p>
                         </div>
                     </div>
                     <div className="space-y-2 text-sm">
                         <p className="text-base font-bold tracking-wide text-gray-900">Contacts</p>
-                        {/* <!-- <div className="flex">
+                        <div className="flex">
                             <p className="mr-1 text-gray-800">Phone:</p>
                             <a href="tel:+91 9779125995" aria-label="Our phone" title="Our phone"
                                 className="transition-colors duration-300 text-deep-purple-accent-400 hover:text-deep-purple-800">+91
-                            9779125995</a>
-                        </div> --> */}
+                                9779125995</a>
+                        </div>
                         <div className="flex">
                             <p className="mr-1 text-gray-800">Email:</p>
                             <a href="mailto:unirchitect@gmail.com" aria-label="Our email" title="Our email"
@@ -85,7 +85,7 @@ const Footer = () => {
                 <div className="flex flex-col-reverse justify-between pt-5 pb-10 border-t lg:flex-row">
                     <p className="text-sm text-gray-600">
                         © Copyright 2021 Unirchitect. All rights reserved.
-                </p>
+                    </p>
                     {/* <ul className="flex flex-col mb-3 space-y-2 lg:mb-0 sm:space-y-0 sm:space-x-5 sm:flex-row">
                         <li>
                             <a href="/"

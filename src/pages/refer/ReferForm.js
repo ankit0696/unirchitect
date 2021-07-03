@@ -80,7 +80,7 @@ const ReferForm = () => {
                             </div>
                             <div className='py-3'>
                                 <label htmlFor="referEmail" className="block text-sm font-medium text-gray-700">Email Address</label>
-                                <input value={refers.referEmail} onChange={handleChange} required type="text" name="referEmail" id="referEmail" autoComplete="given-name" className="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md" />
+                                <input value={refers.referEmail} onChange={handleChange} required type="email" name="referEmail" id="referEmail" autoComplete="given-name" className="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md" />
 
                             </div>
                             <div className='py-3'>
