@@ -15,8 +15,6 @@ const ExpertForm = (props) => {
     const uploadHandler = async (e) => {
         e.preventDefault()
 
-        // let formData = new FormData(e.target)
-
         const uploadTask = storage.ref(`experts/${name}${work_location}${work_experience}${mobile}${email_address}.pdf`).put(file)
         uploadTask.on(
             "state_changed",
