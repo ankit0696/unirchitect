@@ -2,7 +2,7 @@ import { HomeIcon, LightningBoltIcon, OfficeBuildingIcon, PresentationChartLineI
 
 export const launch = {
     titleLaptop: `Big news! We're excited to announce our Architecture Consultancy.`,
-    titlePhone: `Free Architecture Consultancy!`
+    titlePhone: `Get free consultation today!`
 }
 
 export const hero = {
