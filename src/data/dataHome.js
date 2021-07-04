@@ -1,7 +1,7 @@
 import { HomeIcon, LightningBoltIcon, OfficeBuildingIcon, PresentationChartLineIcon, SelectorIcon, ShieldCheckIcon } from '@heroicons/react/outline'
 
 export const launch = {
-    titleLaptop: `Big news! We're excited to announce our Architecture Consultancy.`,
+    titleLaptop: `Book your free architecture consultation today!`,
     titlePhone: `Get free consultation today!`
 }
 
