@@ -16,7 +16,7 @@ export const hero = {
   title: 'Architecture Consultancy',
   titleSecondary: 'online conferencing',
   description:
-    'We provide complete Architecture,Interior & Construction solution. Clear your Architectural, Structural, Vastu & other doubts with our experts over conferencing. Schedule an appointment with our experts. Free.',
+    'From strategy to execution. We provide complete Architecture,Interior & Construction solution. Clear your Architectural, Structural, Vastu & other doubts with our experts over conferencing. Schedule an appointment with our experts. Free.',
 }
 
 export const details = {
